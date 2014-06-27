@@ -1,0 +1,3 @@
+[submodule "sites/all/themes/osborne/vendor/bootstrap"]
+	path = sites/all/themes/osborne/vendor/bootstrap
+	url = https://github.com/twbs/bootstrap.git
