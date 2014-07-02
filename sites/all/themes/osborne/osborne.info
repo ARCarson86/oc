@@ -3,6 +3,11 @@ description = Osborne Capital Theme
 core = 7.x
 engine = phptemplate
 
+stylesheets[all][] = css/style.less
+
+scripts[] = vendor/cycle2/cycle2.js
+scripts[] = vendor/cycle2/cycle2.carousel.js
+scripts[] = js/script.js 
 
 regions[header] = Header
 regions[slideshow] = Slideshow

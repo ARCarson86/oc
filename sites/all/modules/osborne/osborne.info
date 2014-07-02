@@ -1,0 +1,7 @@
+
+name = osborne
+description = Osborne Capitol custom module
+package = OC
+core = 7.x
+ 
+files[] = osborne.module
