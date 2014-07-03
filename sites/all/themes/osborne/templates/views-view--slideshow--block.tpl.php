@@ -53,12 +53,12 @@
 
   <?php if ($rows): ?>
 
-    <div class="cycle-slideshow" id="myCarousel" data-cycle-slides=".item" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-pause-on-hover="true" data-cycle-carousel-visible="3" data-cycle-next="#next"
-    data-cycle-prev="#prev">
+    <div class="cycle-slideshow" id="myCarousel" data-cycle-slides=".item" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-pause-on-hover="true" data-cycle-carousel-visible="3" data-cycle-next=".next"
+    data-cycle-prev=".prev">
       
         <?php print $rows; ?>
-        <a href=# id="prev"><img src="sites/all/themes/osborne/css/images/arrow-right.png"/></a>
-        <a href=# id="next"><img src="sites/all/themes/osborne/css/images/arrow-left.png"/></a>
+        <a href=# id="prev-control" class="prev"><img src="sites/all/themes/osborne/css/images/arrow-right.png"/></a>
+        <a href=# id="next-control" class="next"><img src="sites/all/themes/osborne/css/images/arrow-left.png"/></a>
     </div>
   <?php elseif ($empty): ?>
     <div class="view-empty">

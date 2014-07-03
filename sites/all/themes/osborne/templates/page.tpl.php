@@ -97,7 +97,14 @@
       
 
     </div></div></div> <!-- /.section, /#header -->
-
+    
+    <div id="mobile-nav" class="col-md-12">
+      <a id="menu-btn" href="#" target="_self">Menu<div id="arrow"></div></a>
+      <div id="nav-items">
+        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t(''))); ?>
+      </div>
+    </div>
+    
     <?php print $messages; ?>
 
     <div id="main-wrapper" class="container"><div class="row">
