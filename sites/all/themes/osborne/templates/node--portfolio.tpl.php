@@ -106,8 +106,9 @@
 
 <?php else: ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-	<?php print render($content['field_portfolio_image']); ?>
+  <div id="lightbox">
+	 <?php print render($content['field_portfolio_image']); ?>
+  </div>
   <div class="content row"<?php print $content_attributes; ?>>
   <div class="col-md-offset-4 col-md-8 col-sm-12">
     <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
