@@ -489,7 +489,7 @@ body{
 	Media Queries
 *************************/
 
-@media all and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
 	#header-wrapper #header #navigation{
 		padding-top: 28px;
 	}
@@ -506,12 +506,15 @@ body{
 	#myCarousel .item{
 		margin: 0;
 	}
+	#slideshow-wrapper{
+		overflow: hidden;
+	}
 	#slideshow-wrapper #next-control, #slideshow-wrapper #prev-control, #fade-left, #fade-right{
 		display: none;
 	}
 }
 
-@media all and (max-width: 670px) {
+@media screen and (max-width: 670px) {
 	
 	#navigation{
 		display: none;

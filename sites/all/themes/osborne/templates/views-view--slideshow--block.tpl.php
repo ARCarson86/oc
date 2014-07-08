@@ -53,7 +53,7 @@
 
   <?php if ($rows): ?>
 
-    <div class="cycle-slideshow" id="myCarousel" data-cycle-slides=".item" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-pause-on-hover="true" data-cycle-carousel-visible="3" data-cycle-next=".next"
+    <div class="cycle-slideshow" id="myCarousel" data-cycle-slides=".item" data-cycle-fx="carousel" data-cycle-timeout="5000" data-cycle-pause-on-hover="true" data-cycle-carousel-visible="1" data-cycle-next=".next"
     data-cycle-prev=".prev">
       
         <?php print $rows; ?>
