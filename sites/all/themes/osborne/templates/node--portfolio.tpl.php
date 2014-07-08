@@ -111,7 +111,7 @@
   </div>
   <div class="content row"<?php print $content_attributes; ?>>
   <div class="col-md-offset-4 col-md-8 col-sm-12">
-    <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);

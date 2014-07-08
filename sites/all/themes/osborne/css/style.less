@@ -118,10 +118,10 @@ body{
 		}
 	}
 	#next-control{
-		left: 0;
+		left: 10px;
 	}
 	#prev-control{
-		right: 0;
+		right: 10px;
 	}
 }
 #block-views-slideshow-block{
@@ -130,20 +130,11 @@ body{
 }
 #myCarousel{
 	margin: 0 auto;
-	width: 1200px !important;
+	width: 1220px !important;
 	overflow: visible !important;
 	.item{
-		-webkit-filter: grayscale(100%);
-		-moz-filter: grayscale(100%);
-		filter: grayscale(100%);
-		-webkit-transition: all 0.3s ease-in-out;
-	    -moz-transition: all 0.3s ease-in-out;
-	    -o-transition: all 0.3s ease-in-out;
-	    transition: all 0.3s ease-in-out;
+		margin: 0 10px;
 		&.cycle-slide-active{
-			-webkit-filter: grayscale(0%);
-		-moz-filter: grayscale(0%);
-		filter: grayscale(0%);
 		}
 		.caption{
 			position: absolute;
@@ -277,6 +268,11 @@ body{
 			.field-name-field-portfolio-image{
 				.field-item{
 					margin-bottom: 25px;
+					img{
+					&:hover{
+						cursor: pointer;
+					}
+				}
 				}
 			}
 			.content{
@@ -508,9 +504,7 @@ body{
 		}
 	}
 	#myCarousel .item{
-		-webkit-filter: grayscale(0%);
-		-moz-filter: grayscale(0%);
-		filter: grayscale(0%);
+		margin: 0;
 	}
 	#slideshow-wrapper #next-control, #slideshow-wrapper #prev-control, #fade-left, #fade-right{
 		display: none;
