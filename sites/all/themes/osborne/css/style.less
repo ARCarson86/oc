@@ -134,22 +134,23 @@ body{
 	overflow: visible !important;
 	.item{
 		margin: 0 10px;
-		&.cycle-slide-active{
-		}
-		.caption{
-			position: absolute;
-			top: 40px;
-			left: 130px;
-			width: 400px;
-			height: 300px;
-			white-space: normal;
-			background-color: rgba(255, 255, 255, 0.6);
-			color: #000;
-			font-size: 24px;
-			font-weight: lighter;
-			line-height: 28px;
-			text-transform: uppercase;
-			padding: 20px;
+		.content{
+			position: relative;
+			.caption{
+				position: absolute;
+				top: 40px;
+				left: 130px;
+				width: 400px;
+				height: 300px;
+				white-space: normal;
+				background-color: rgba(255, 255, 255, 0.6);
+				color: #000;
+				font-size: 24px;
+				font-weight: lighter;
+				line-height: 28px;
+				text-transform: uppercase;
+				padding: 20px;
+			}
 		}
 	}
 }
@@ -636,6 +637,9 @@ body{
 	#header-wrapper #header{
 		margin-bottom: 25px;
 		border: 0 none;
+	}
+	#myCarousel .caption{
+		display: block;
 	}
 }
 

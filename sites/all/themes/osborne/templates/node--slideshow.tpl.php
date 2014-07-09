@@ -84,16 +84,16 @@
 <a href="<?php print $node->field_link_url['und'][0]['value']; ?>" target="_blank"><div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <div class="content"<?php print $content_attributes; ?>>
+    <div class="caption">
+      <?php print render($content['body']); ?>
+    </div>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      hide($content['body']);
       print render($content);
     ?>
-    <div class="caption">
-		<?php print render($content['body']); ?>
-    </div>
+    
   </div>
 
 </div>
