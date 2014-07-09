@@ -104,7 +104,14 @@
 			doc.on("click", ".lb_next", function(){ navigate(1) });
 			doc.on("click", ".lb_backdrop", function(){ navigate(0) });
 			$('.lb_backdrop').on('click', function(){
-				navigate(0);
+				$("#lightbox .field-item.active").removeClass("active");
+					$(".lb_canvas").removeClass("loading");
+					//Fade out the lightbox elements
+					$(".lb_backdrop, .lb_canvas, .lb_controls").fadeOut("slow", function(){
+						//empty canvas and title
+						$(".lb_canvas, .lb_title").html("");
+					})
+					lb_loading= false;
 			});
 			//Keyboard based navigation
 			doc.keyup(function(e){
