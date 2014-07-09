@@ -573,6 +573,65 @@ body{
 	}
 }
 
+@media all and (max-width: 670px) {
+	
+	#navigation{
+		display: none;
+	}
+	#mobile-nav{
+		display: block;
+		background-color: @OC-blue;
+		margin-bottom: 25px;
+		&.open{
+			#menu-btn{
+				#arrow{
+					background-position: 0px 0px;
+				}
+			}
+			#nav-items{
+				display: block;
+				ul.inline li{
+					display: block;
+					float: left;
+					width: 100%;
+					a{
+						color: #fff;
+						text-transform: uppercase;
+						font-size: 18px;
+						line-height: 70px;
+					}
+				}
+			}
+		}
+		#menu-btn{
+			line-height: 45px;
+			color: #fff;
+			text-transform: uppercase;
+			display: block;
+			font-weight: lighter;
+			font-size: 18px;
+			position: relative;
+			#arrow{
+				position: absolute;
+				top: 16px;
+				right: 10px;
+				background-image: url('images/up-down-arrow.png');
+				width: 26px;
+				height: 13px;
+				background-repeat: no-repeat;
+				background-position: 0px -13px;
+			}
+		}
+		#nav-items{
+			display: none;
+		}
+	}
+	#header-wrapper #header{
+		margin-bottom: 25px;
+		border: 0 none;
+	}
+}
+
 /*Lightbox element style*/
 .lb_backdrop {
 	background: rgba(0, 0, 0, 0.9);
