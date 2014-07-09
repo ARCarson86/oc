@@ -103,7 +103,9 @@
 			doc.on("click", ".lb_previous", function(){ navigate(-1) });
 			doc.on("click", ".lb_next", function(){ navigate(1) });
 			doc.on("click", ".lb_backdrop", function(){ navigate(0) });
-			
+			$('.lb_backdrop').on('click', function(){
+				navigate(0);
+			});
 			//Keyboard based navigation
 			doc.keyup(function(e){
 				//Keyboard navigation should work only if lightbox is active which means backdrop is visible.
