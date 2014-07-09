@@ -91,7 +91,7 @@
       hide($content['body']);
       print render($content);
     ?>
-    <div class="caption jumbotron">
+    <div class="caption">
 		<?php print render($content['body']); ?>
     </div>
   </div>
