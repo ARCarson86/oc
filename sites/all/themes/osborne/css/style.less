@@ -19,6 +19,7 @@ body{
 	}
 	#main-wrapper{
 		min-height: 500px;
+		margin-bottom: 90px;
 	}
 }
 
@@ -163,6 +164,7 @@ body{
 *************************/
 
 #highlights{
+	min-height: 350px;
 	.region-highlights{
 		.block{
 			line-height: 20px;
@@ -337,7 +339,7 @@ body{
 					color: #fff;
 					width: 300px;
 					height: 150px;
-					background-color: rgba(16, 79, 114, 0.65);
+					background-color: rgba(16, 79, 114, 0.9);
 					opacity:0.0;
     				filter:alpha(opacity=0);
     				>a{
@@ -359,10 +361,12 @@ body{
     					}
     				}
     				.links{
+    					position: absolute;
+						bottom: 0;
+						right: 10px;
     					.node-readmore{
     						padding: 0;
     						text-transform: uppercase;
-    						text-decoration: underline;
     						a{
     							color: #fff;
     						}
@@ -402,7 +406,7 @@ body{
 	text-transform: uppercase;
 	margin-bottom: 30px;
 }
-#webform-client-form-6{
+.webform-client-form{
 	.form-item{
 		margin: 0 0 20px 0;
 
@@ -462,9 +466,11 @@ body{
 	width: 100%;
 	padding: 30px 0;
 	background-color: @OC-gray;
-	margin-top: 60px;
 	text-transform: uppercase;
 	color: #fff;
+	position:absolute;
+	
+	left:0;
 	a{
 		color: #fff;
 		-webkit-transition: all 0.2s ease-in-out;
@@ -485,6 +491,64 @@ body{
 				&:hover{
 					color: @OC-blue;
 				}
+			}
+		}
+	}
+}
+
+/*************************
+	News
+*************************/
+.view-news{
+	.views-row{
+		padding: 30px 0;
+		border-bottom: 1px solid #cdced0;
+		&:first-child{
+			padding-top: 0;
+		}
+		&:last-child{
+			border: 0 none;
+		}
+	}
+}
+.node-article{
+	.field-name-field-image{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	a{
+		color: @OC-blue;
+	}
+	&.node-teaser{
+		color: @OC-blue;
+		.readmore{
+			display: inline-block;
+			background-color: @OC-blue;
+			color: #fff;
+			line-height: 24px;
+			padding: 0 7px;
+			text-transform: uppercase;
+			font-weight: lighter;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.news-title{
+			text-transform: uppercase;
+			color: #939598;
+			display: block;
+			height: 100%;
+			-webkit-transition: all 0.2s ease-in-out;
+			-moz-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			h2{
+				font-size: 18px;
+				font-weight: lighter;
+			}
+			&:hover{
+				color: @OC-blue;
+				text-decoration: none;
 			}
 		}
 	}
