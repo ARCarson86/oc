@@ -106,8 +106,9 @@
     </div>
     
 	<div id="port-sort" class="container"><div class="row"><div class="col-md-offset-1 col-md-11">
-		<a href="/portfolio" target="_self">chronological</a>
-		<a href="/portfolio/alpha" target="_self">alpha</a>
+  <a href="/portfolio" target="_self">all</a>
+		<a href="/portfolio/current" target="_self">current</a>
+		<a href="/portfolio/realized" target="_self">realized</a>
 	</div></div></div>
     <?php print $messages; ?>
 
